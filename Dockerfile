@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Direkt SPEED
 # invalidate the Cache and update the apt list 
 RUN echo currentsMillies
-RUN apt-get update -y && apt-upgrade -y
+RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y mongodb
 RUN mkdir -p /data/db
 # Define mountable directories.
